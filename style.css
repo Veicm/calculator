@@ -83,3 +83,13 @@ button:active {
 .operator:active {
     background-color: rgb(135, 255, 135);
 }
+
+.side-op {
+    background-color: rgb(60, 120, 60);
+}
+.side-op:hover {
+    background-color: rgb(80, 120, 80);
+}
+.side-op:active {
+    background-color: rgb(110, 120, 110);
+}
