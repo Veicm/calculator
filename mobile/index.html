@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x/-icon" href="https://veicm.github.io/My_Website/images/logo.jpg"/>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <input id="display" readonly />
+    <table>
+      <tr>
+        <td onclick="clearDisplay()" class="side-op">C</td>
+        <td onclick="negative()" class="side-op">+/-</td>
+        <td onclick="perCent()" class="side-op">%</td>
+        <td onclick="addCalc('/')" class="operator">/</td>
+      </tr>
+
+      <tr>
+        <td onclick="appendToDisplay('7')">7</td>
+        <td onclick="appendToDisplay('8')">8</td>
+        <td onclick="appendToDisplay('9')">9</td>
+        <td onclick="addCalc('*')" class="operator">*</td>
+      </tr>
+      
+      <tr>
+        <td onclick="appendToDisplay('4')">4</td>
+        <td onclick="appendToDisplay('5')">5</td>
+        <td onclick="appendToDisplay('6')">6</td>
+        <td onclick="addCalc('-')" class="operator">-</td>
+      </tr>
+      
+      <tr>
+        <td onclick="appendToDisplay('1')">1</td>
+        <td onclick="appendToDisplay('2')">2</td>
+        <td onclick="appendToDisplay('3')">3</td>
+        <td onclick="addCalc('+')" class="operator">+</td>
+      </tr>
+      
+      <tr>
+        <td onclick="appendToDisplay('00')">00</td>
+        <td onclick="appendToDisplay('0')">0</td>
+        <td onclick="appendToDisplay('.')">.</td>
+        <td onclick="calculate()" class="operator">=</td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
